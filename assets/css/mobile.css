@@ -10,13 +10,11 @@
     padding-inline: 16px;
     grid-template-columns: 1fr;
     column-gap: 0;
-    grid-template-rows: 28px 32px 636px 64px 489px 64px 454px;
+    grid-template-rows: 28px 32px 1189px 64px 454px;
     grid-template-areas:
       "header"
       "."
       "main"
-      "."
-      "side"
       "."
       "footer";
     overflow-x: hidden;
@@ -42,14 +40,16 @@
     main {
       background-size: 100% 300px;
       grid-template-columns: 1fr;
-      grid-template-rows: 324px 120px 16px 104px 24px 48px;
+      grid-template-rows: 324px 120px 16px 104px 24px 48px 64px 489px;
       grid-template-areas:
         "."
         "h1"
         "."
         "p"
         "."
-        "a";
+        "a"
+        "."
+        "side";
       h1 {
         font-size: 40px;
         line-height: 40px;
@@ -57,14 +57,14 @@
       a {
         width: calc(50% + 14px);
       }
-    }
-    aside {
-      padding-block: 24px;
-      padding-inline: 20px;
-      h2 {
-        font-size: 32px;
-        line-height: 32px;
-        margin-block-end: calc(2rem + 3px);
+      aside {
+        padding-block: 24px;
+        padding-inline: 20px;
+        h2 {
+          font-size: 32px;
+          line-height: 32px;
+          margin-block-end: calc(2rem + 3px);
+        }
       }
     }
     footer {
